@@ -36,43 +36,43 @@
 </head>
 <body>
     <form onsubmit="return false;">
-        <label for="epic-equipment">Anzahl Epische Equipments (0–10):</label>
+        <label for="epic-equipment">Number Epic Equipments (0–10):</label>
         <input type="number" id="epic-equipment" name="epic-equipment" min="0" max="10" />
 
-        <label for="standard-equipment">Anzahl Standard Equipments (0–20):</label>
+        <label for="standard-equipment">Number Common Equipments (0–20):</label>
         <input type="number" id="standard-equipment" name="standard-equipment" min="0" max="20" />
 
-        <label for="liga">Liga Auswahl:</label>
+        <label for="liga">Your League for starbonus:</label>
         <select id="liga" name="liga">
-            <option value="" disabled selected>Bitte auswählen</option>
+            <option value="" disabled selected>please select</option>
             <option value="no starbonus">no starbonus</option>
             <option value="Bronze 3">Bronze 3</option>
             <option value="Bronze 2">Bronze 2</option>
             <option value="Bronze 1">Bronze 1</option>
-            <option value="Silber 3">Silber 3</option>
-            <option value="Silber 2">Silber 2</option>
-            <option value="Silber 1">Silber 1</option>
+            <option value="Silber 3">Silver 3</option>
+            <option value="Silber 2">Silver 2</option>
+            <option value="Silber 1">Silver 1</option>
             <option value="Gold 3">Gold 3</option>
             <option value="Gold 2">Gold 2</option>
             <option value="Gold 1">Gold 1</option>
-            <option value="Kristall 3">Kristall 3</option>
-            <option value="Kristall 2">Kristall 2</option>
-            <option value="Kristall 1">Kristall 1</option>
-            <option value="Meister 3">Meister 3</option>
-            <option value="Meister 2">Meister 2</option>
-            <option value="Meister 1">Meister 1</option>
+            <option value="Kristall 3">Crystal 3</option>
+            <option value="Kristall 2">Crystal 2</option>
+            <option value="Kristall 1">Crystal 1</option>
+            <option value="Meister 3">Master 3</option>
+            <option value="Meister 2">Master 2</option>
+            <option value="Meister 1">Master 1</option>
             <option value="Champion 3">Champion 3</option>
             <option value="Champion 2">Champion 2</option>
             <option value="Champion 1">Champion 1</option>
             <option value="Titan 3">Titan 3</option>
             <option value="Titan 2">Titan 2</option>
             <option value="Titan 1">Titan 1</option>
-            <option value="Legende">Legende</option>
+            <option value="Legende">Legend</option>
         </select>
 
-        <label for="winrate">CW Winrate:</label>
+        <label for="winrate">CW winrate:</label>
         <select id="winrate" name="winrate">
-            <option value="" disabled selected>Bitte auswählen</option>
+            <option value="" disabled selected>please select</option>
             <option value="0%">0%</option>
             <option value="5%">5%</option>
             <option value="10%">10%</option>
@@ -96,9 +96,9 @@
             <option value="100%">100%</option>
         </select>
 
-        <label for="townhall">Townhall Stufe:</label>
+        <label for="townhall">Townhall Level:</label>
         <select id="townhall" name="townhall">
-            <option value="" disabled selected>Bitte auswählen</option>
+            <option value="" disabled selected>please select</option>
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
@@ -112,19 +112,19 @@
         </select>
     </form>
 
-    <h2>Berechnung</h2>
+    <h2>Calculations</h2>
     <table id="berechnung">
         <tr><th></th><th>Shiny</th><th>Glowy</th><th>Starry</th></tr>
-        <tr><td>total cost</td><td id="total-shiny"></td><td id="total-glowy"></td><td id="total-starry"></td></tr>
-        <tr><td>starbonus</td><td id="bonus-shiny"></td><td id="bonus-glowy"></td><td>0</td></tr>
-        <tr><td>cw bonus per hit</td><td id="cwbonus-shiny"></td><td id="cwbonus-glowy"></td><td id="cwbonus-starry"></td></tr>
-        <tr><td>number of days needed</td><td></td><td></td><td></td></tr>
-        <tr><td>free trader gifts weekly</td><td>0</td><td><select id="freetrader-gifts-glowy" name="freetrader-gifts-glowy">
+        <tr><td>Total Cost</td><td id="total-shiny"></td><td id="total-glowy"></td><td id="total-starry"></td></tr>
+        <tr><td>Starbonus</td><td id="bonus-shiny"></td><td id="bonus-glowy"></td><td>0</td></tr>
+        <tr><td>CW bonus per hit</td><td id="cwbonus-shiny"></td><td id="cwbonus-glowy"></td><td id="cwbonus-starry"></td></tr>
+        <tr><td>Number of days needed</td><td></td><td></td><td></td></tr>
+        <tr><td>Free trader gifts weekly</td><td>0</td><td><select id="freetrader-gifts-glowy" name="freetrader-gifts-glowy">
         <option value="0">0</option>
         <option value="10">10</option>
       </select></td><td>0</td></tr>
-        <tr><td>number of days needed</td><td></td><td></td><td></td></tr>
-        <tr><td>raid medals trader weekly</td><td><select id="raid-medals-shiny" name="raid-medals-shiny">
+        <tr><td>Number of days needed</td><td></td><td></td><td></td></tr>
+        <tr><td>Raid medals trader weekly</td><td><select id="raid-medals-shiny" name="raid-medals-shiny">
         <option value="0">0</option>
         <option value="500">500</option>
         <option value="1000">1000</option>
@@ -139,45 +139,45 @@
         <option value="5">5</option>
         <option value="10">10</option>
       </select></td></tr>
-        <tr><td>number of days needed</td><td></td><td></td><td></td></tr>
+        <tr><td>Number of days needed</td><td></td><td></td><td></td></tr>
     </table>
 
-    <h2>Kosten pro Equipment</h2>
+    <h2>Cost per Equipment</h2>
     <table>
         <tr><th></th><th>Shiny</th><th>Glowy</th><th>Starry</th></tr>
-        <tr><td>Standard Equipment</td><td>27260</td><td>1920</td><td>0</td></tr>
-        <tr><td>Episches Equipment</td><td>56060</td><td>3720</td><td>480</td></tr>
+        <tr><td>Common Equipment</td><td>27260</td><td>1920</td><td>0</td></tr>
+        <tr><td>Epic Equipment</td><td>56060</td><td>3720</td><td>480</td></tr>
     </table>
 
     <h2>Starbonus</h2>
     <table id="starbonus-table">
-        <tr><th>Liga</th><th>Shiny</th><th>Glowy</th></tr>
+        <tr><th>League</th><th>Shiny</th><th>Glowy</th></tr>
         <tr><td>no starbonus</td><td>0</td><td>0</td></tr>
         <tr><td>Bronze 3</td><td>125</td><td>6</td></tr>
         <tr><td>Bronze 2</td><td>175</td><td>7</td></tr>
         <tr><td>Bronze 1</td><td>175</td><td>8</td></tr>
-        <tr><td>Silber 3</td><td>200</td><td>9</td></tr>
-        <tr><td>Silber 2</td><td>250</td><td>10</td></tr>
-        <tr><td>Silber 1</td><td>275</td><td>11</td></tr>
+        <tr><td>Silver 3</td><td>200</td><td>9</td></tr>
+        <tr><td>Silver 2</td><td>250</td><td>10</td></tr>
+        <tr><td>Silver 1</td><td>275</td><td>11</td></tr>
         <tr><td>Gold 3</td><td>300</td><td>12</td></tr>
         <tr><td>Gold 2</td><td>325</td><td>14</td></tr>
         <tr><td>Gold 1</td><td>350</td><td>16</td></tr>
-        <tr><td>Kristall 3</td><td>375</td><td>18</td></tr>
-        <tr><td>Kristall 2</td><td>400</td><td>20</td></tr>
-        <tr><td>Kristall 1</td><td>425</td><td>22</td></tr>
-        <tr><td>Meister 3</td><td>450</td><td>24</td></tr>
-        <tr><td>Meister 2</td><td>500</td><td>26</td></tr>
-        <tr><td>Meister 1</td><td>525</td><td>28</td></tr>
+        <tr><td>Crystal 3</td><td>375</td><td>18</td></tr>
+        <tr><td>Crystal 2</td><td>400</td><td>20</td></tr>
+        <tr><td>Crystal 1</td><td>425</td><td>22</td></tr>
+        <tr><td>Master 3</td><td>450</td><td>24</td></tr>
+        <tr><td>Master 2</td><td>500</td><td>26</td></tr>
+        <tr><td>Master 1</td><td>525</td><td>28</td></tr>
         <tr><td>Champion 3</td><td>550</td><td>30</td></tr>
         <tr><td>Champion 2</td><td>625</td><td>34</td></tr>
         <tr><td>Champion 1</td><td>700</td><td>38</td></tr>
         <tr><td>Titan 3</td><td>775</td><td>42</td></tr>
         <tr><td>Titan 2</td><td>850</td><td>46</td></tr>
         <tr><td>Titan 1</td><td>925</td><td>50</td></tr>
-        <tr><td>Legende</td><td>1000</td><td>54</td></tr>
+        <tr><td>Legend</td><td>1000</td><td>54</td></tr>
     </table>
 
-    <h2>CW Winrate Erze</h2>
+    <h2>CW Winrate Ores</h2>
     <table id="cw-ertrag">
         <tr><th>CW Winrate</th><th>Shiny</th><th>Glowy</th><th>Starry</th></tr>
         <tr><td>no cw</td><td>0</td><td>0</td><td>0</td></tr>
@@ -204,7 +204,7 @@
         <tr><td>100%</td><td id="cw100-shiny"></td><td id="cw100-glowy"></td><td id="cw100-starry"></td></tr>
     </table>
 
-    <h2>Erze pro Rathaus</h2>
+    <h2>CW Ores per Townhall</h2>
     <table id="erze-table">
         <tr><th>Townhall</th><th>Shiny</th><th>Glowy</th><th>Starry</th></tr>
         <tr><td>8</td><td>380</td><td>15</td><td>0</td></tr>
